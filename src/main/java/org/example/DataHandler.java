@@ -4,10 +4,10 @@ import java.io.File;
 import java.io.IOException;
 
 
-public class UserInputHandler {
+public class DataHandler {
     MovieLibrary listMovieLibrary = new ObjectMapper().readValue(new File("src/movies.json"), MovieLibrary.class);
 
-    public UserInputHandler() throws IOException {
+    public DataHandler() throws IOException {
     }
 
     public void printMenu() {
