@@ -10,6 +10,21 @@ public class Movie {
     private Director director;
     List<Actor> actors = new ArrayList<>();
 
+
+    public String getTitle() {
+        return title;
+    }
+
+
+    public int getDate() {
+        return date;
+    }
+
+
+    public List<Actor> getActors() {
+        return actors;
+    }
+
     public void setTitle(String title) {
         this.title = title;
     }
@@ -30,29 +45,9 @@ public class Movie {
         this.actors = actors;
     }
 
-    public String getTitle() {
-        return title;
-    }
-
-    public String getGenre() {
-        return genre;
-    }
-
-    public int getDate() {
-        return date;
-    }
-
-    public Director getDirector() {
-        return director;
-    }
-
-    public List<Actor> getActors() {
-        return actors;
-    }
-
     @Override
     public String toString() {
-        return  "\n" + "title: " + title + "\n" +
+        return "\n" + "title: " + title + "\n" +
                 " genre: " + genre + "\n" +
                 " date: " + date + "\n" +
                 " director: " + director + "\n" +
